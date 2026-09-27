@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+<!-- https://raw.githack.com/PabloPacheco/doctorado_alimentos/main/bibliometrico_defrost.html -->
+		<title>C2MC_PPP_2026</title>
+
+		<meta name="description" content=" ">
+		<meta name="author" content="PPP">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+        <!-- Black - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized  -->
+                            
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/night.css">
+        
+      
+        <style>
+            /* Estilo para el cuadro */
+            #miCuadro {
+                position: fixed;
+                bottom: 100%;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.);
+                color: #fff;
+                padding: 6px;
+            }     
+          
+          .highlight-box {
+                background-color: rgba(0, 0, 0, 0.85);  /* negro con algo de transparencia */
+                color: white;                          /* letra blanca */
+                border: 2px solid white;              /* borde blanco */
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 22px;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* sombra blanca suave */
+              }          
+          
+            .reveal {
+              background-color: #000000 !important;
+            }
+
+            .reveal .slides {
+              background: transparent !important;
+            }
+          
+            /* Estilos personalizados para el número de la diapositiva */
+            .reveal .slide-number {
+                position: absolute;
+                bottom: 10px;
+                left: 10px; /* Cambia la posición horizontal */
+                font-size: 33px; /* Cambia el tamaño del número */
+                color: white; /* Cambia el color del número */
+            }
+            
+            
+            .twocolumn {
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 5px;
+               text-align: left;
+            }
+          
+            
+            .twocolumn div {
+                flex: 1;  /* Permite que las columnas ocupen el mismo ancho */
+                text-align: center;  /* Centra el contenido horizontalmente */
+            }
+            
+            .two-column-list {
+                column-count: 2;
+                column-gap: 9px;  /* Espacio entre las columnas */
+            }
+          
+          
+          /* tamaño menu parte inferior */
+          
+            .menu {
+                font-size: 21px !important;
+            }
+
+            .menu li {
+                font-size: 21px !important;
+            }
+            
+
+        </style>
+        
+        
+	</head>
+    
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+  
+            <div class="menubar">
+                <ul class="menu"></ul> 
+            </div>
+
+<!--
+Fade In/Out:
+
+fragment fade-in: Hace que el fragmento aparezca con un efecto de desvanecimiento.
+fragment fade-out: Hace que el fragmento desaparezca con un efecto de desvanecimiento.
+Slide:
+
+fragment fade-left: Hace que el fragmento aparezca deslizándose desde la izquierda.
+fragment fade-right: Hace que el fragmento aparezca deslizándose desde la derecha.
+fragment fade-up: Hace que el fragmento aparezca deslizándose desde arriba.
+fragment fade-down: Hace que el fragmento aparezca deslizándose desde abajo.
+Zoom:
+
+fragment zoom-in: Hace que el fragmento aparezca con un efecto de zoom hacia adentro.
+fragment zoom-out: Hace que el fragmento desaparezca con un efecto de zoom hacia afuera.
+Grow/Shrink:
+
+fragment grow: Hace que el fragmento aparezca creciendo.
+fragment shrink: Hace que el fragmento desaparezca encogiéndose.
+Highlight:
+
+fragment highlight-current-blue: Hace que el fragmento actual se resalte en azul.
+fragment highlight-current-red: Hace que el fragmento actual se resalte en rojo.
+-->                
+                
+
+<!--||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||PORTADA|||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||-->                
+        
+        <section data-state="hide-menubar hide-menu">
+      
+
+            <!-- PORTADA -->
+                <section>
+                  <!-- Logos superiores -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <!-- Logo izquierda -->
+                    <img src="imagenes/Universidad_de_La_Serena_escudo.png" style="height: 90px;">
+
+                    <!-- Logo centro -->
+                    <img src="imagenes/logo_c2mc_2025.png" style="width: 129px;">
+
+                    <!-- Logo derecha -->
+                    <img src="imagenes/logo_UCM.png" style="height: 93px;">
+                  </div>
+
+                  <!-- Título -->
+                  <h6 style="margin-top: 18px;">DISEÑO Y SIMULACIÓN CFD DE UN RADIADOR EXPERIMENTAL CON PERFORACIONES BASADAS EN PATRONES RECURSIVOS</h6>
+
+                  <!-- Autores -->
+                  <p style="font-size: 18px; text-align: center; margin-top: 15px;">
+                    Brandon Rojas Helbig, <u>Pablo Pacheco Pérez</u>
+                  </p>
+
+                  <!-- Instituciones -->
+                  <p style="font-size: 15px; text-align: center; line-height: 1.5; margin-top: 15px;">
+                    <sup>1</sup> Departamento de Ingeniería Mecánica – Universidad de La Serena <br>
+                    Benavente 980 – La Serena – CHILE <br>
+                    e-mail: brandon.rojas@userena.cl, ppacheco@userena.cl <br>
+                  </p>
+
+                  <!-- Congreso al pie -->
+                  <p style="font-size: 16px; text-align: center; margin-top: 25px;">
+                    <strong>XXIV Congreso Chileno de Mecánica Computacional</strong>
+                  </p>
+                </section>
+                
+                
+
+                <section>
+                  <h6>Contenido</h6>
+
+                  <div style="display: flex; gap: 50px; justify-content: space-between; font-size: 25px;">
+                    <!-- Columna 1 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Motivación</strong></p>
+                      </div>
+
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Simulación</strong></p>
+                        <ul>
+                          <li>Situación física</li>
+                          <li>Modelo matemático</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Resultados</strong></p>
+                        <p><strong>Conclusiones</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                      
+        </section>
+                
+                
+                
+                
+                
+                
+                
+        <section data-name = "Motivación" >      
+            
+                <section>
+                        <p style="font-size: 33px; font-weight: 800; text-align: center; line-height: 1.3;"> 
+                            Deshielo de Evaporadores</p>
+                    
+                    <p style="font-size: 21px; text-align: justify; text-align-last: left;">
+                        El agua contenida en el aire se condensa sobre las aletas y los tubos $\rightarrow$ formación de hielo
+                    </p> 
+                    <div class="r-stack">
+                        <img class="fragment current-visible" src="imagenes/evaporator2.jpg" width="650">
+                        <img class="fragment" src="imagenes/subzero_not_defrosting.jpg" width="650">
+                    </div>
+                </section>     
+                
+                
+                <section>
+                        <p style="font-size: 33px; font-weight: 800; text-align: center; line-height: 1.3;"> 
+                            Deshielo de Evaporadores</p>
+                    
+                        <img src="imagenes/camaraRefrigeracion.png" width="750">
+                    
+                </section>  
+            
+            
+                <section>
+                    <h5 style="font-size: 26px; margin-bottom: 10px;">
+                        Diseño de aletas
+                    </h5>                                    
+                    <img src="imagenes/fin_design.png" width="780">
+                </section>
+          
+          
+        </section> 
+        
+          
+          
+
+                                                                                                    
+        <section data-name="Simulación">
+          
+          
+            <section>
+
+              <h4>Diseños</h4>
+
+              <!-- Imagen -->
+              <div style="text-align: center; margin-top: 5px;">
+                <img src="imagenes/aletas_marca.png" style="width: 90%; border-radius: 0px;">
+              </div>
+
+            </section>
+        
+        
+              <section data-background-video="videos/sgh0001-0600.mp4" 
+                     data-background-video-loop="true"
+                     data-background-video-muted="true"
+                     data-background-size="cover"
+                     style="position: relative;">
+
+                <div class="fragment fade-in"
+                     style="
+                        position: absolute;
+                        top: 5%;
+                        right: 4%;
+                        width: 28%;
+                        font-size: 22px;
+                        text-align: left;
+                        line-height: 1.6;
+                        background: rgba(0,0,0,0.72);
+                        color: white;
+                        padding: 18px;
+                        border-radius: 12px;
+                     ">
+
+                    <strong style="font-size: 28px;">
+                        Modelo Físico
+                    </strong>
+
+                </div>
+
+            </section>
+          
+  
+          
+          
+          
+                <section data-background-video="videos/keyf0001-0933.mp4" data-background-video-loop data-background-video-muted style="position: relative; height: 100%;"> 
+
+                  <!-- Recuadro posicionado exactamente arriba a la izquierda con fondo transparente -->
+                  <div style="
+                    position: absolute; 
+                    top: 420px; 
+                    left: 630px; 
+                    width: 35%; /* Reducido ligeramente para compensar el padding */
+                    color: white; 
+                    text-align: left;
+                    z-index: 10;
+                    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con 60% de opacidad */
+                    padding: 20px; /* Espacio para que el texto respire dentro del cuadro */
+                    border-radius: 8px; /* Bordes suavemente redondeados */
+                    box-sizing: border-box; /* Asegura que el padding no estire el ancho del contenedor */
+                  "> 
+                    <p class="fragment fade-in" style="font-size: 21px; text-align: left; color: white; margin: 0 0 10px 0;"> 
+                      <strong>Objetivos:</strong> 
+                    </p> 
+                    <ul class="fragment fade-in" style="font-size: 18px; text-align: left; color: white; margin: 0; padding-left: 20px;"> 
+                      <li>Simulación CFD de radiador</li> 
+                      <li>Tipos: aleta plana convencional y fractal</li> 
+                      <li>Fractal: 1 y 2 iteraciones</li> 
+                      <li>Velocidad de aire: 0.5 y 3.0 m/s</li> 
+                    </ul> 
+                  </div>
+
+                </section>          
+          
+    
+          
+            <section>
+
+              <h4>Modelo Matemático</h4>
+
+              <div style="display: flex; gap: 40px; align-items: flex-start; margin-top: 20px;">
+
+                <!-- Columna izquierda -->
+                <div style="flex: 1; font-size: 18px; text-align: left; line-height: 1.5;">
+
+                  <h5 style="color: #42affa; margin-bottom: 12px;">Continuidad</h5>
+                  <div style="text-align: left; margin: 10px 0;">
+                    $\displaystyle \nabla \cdot (\rho_f \bar{\mathbf{v}}) = 0$
+                  </div>
+
+                  <h5 style="color: #42affa; margin-top: 20px; margin-bottom: 12px;">Momento Lineal (RANS)</h5>
+                  <div style="text-align: left; margin: 10px 0;">
+                    $\displaystyle \partial_t (\rho_f \bar{\mathbf{v}}) + \nabla \cdot (\rho_f \bar{\mathbf{v}}\bar{\mathbf{v}}) = -\nabla p + \nabla \cdot (\boldsymbol{\tau} + \boldsymbol{\tau}_t) + (\rho_f - \rho_{ref})\mathbf{g}$
+                  </div>
+
+                  <h5 style="color: #42affa; margin-top: 20px; margin-bottom: 12px;">Energía — Fluido y Sólido</h5>
+                  <div style="text-align: left; margin: 5px 0;">
+                    $\displaystyle \partial_t (\rho_f c_{p\,f} T_f) + \nabla \cdot (\rho_f c_{p\,f} \bar{\mathbf{v}} T_f) = \nabla \cdot \left[ (k_f + k_t) \nabla T_f \right]$
+                  </div>
+                  <div style="text-align: left; margin: 5px 0;">
+                    $\displaystyle \rho_s c_{p\,s} \partial_t T_s = \nabla \cdot (k_s \nabla T_s)$
+                  </div>
+
+                </div>
+
+                <!-- Columna derecha (Modelo k-omega SST alineado y multilínea) -->
+                <div style="flex: 1; font-size: 18px; text-align: left; line-height: 1.5;">
+
+                  <h5 style="color: #42affa; margin-bottom: 12px;">Turbulencia — Energía Cinética ($k$)</h5>
+                  <div style="text-align: left; margin: 10px 0;">
+                    $\displaystyle \partial_t (\rho_f k) + \nabla \cdot (\rho_f \bar{\mathbf{v}} k) = \nabla \cdot \left[ \left(\mu_f + \sigma_k \mu_t\right) \nabla k \right] + P_k - \beta^* \rho_f k \omega$
+                  </div>
+
+                  <h5 style="color: #42affa; margin-top: 25px; margin-bottom: 12px;">Turbulencia — Disipación Específica ($\omega$)</h5>
+                  <div style="text-align: left; margin: 10px 0; font-size: 17px;">
+                    $\displaystyle 
+                    \begin{aligned}
+                    \partial_t (\rho_f \omega) + \nabla \cdot (\rho_f \bar{\mathbf{v}} \omega) = \, &\nabla \cdot \left[ \left(\mu_f + \sigma_\omega \mu_t\right) \nabla \omega \right] + \gamma P_\omega - \beta \rho_f \omega^2 \\
+                    &+ 2(1 - F_1)\rho_f \sigma_{\omega2} \frac{1}{\omega} \nabla k \cdot \nabla \omega
+                    \end{aligned}
+                    $
+                  </div>
+                  
+                  <div style="text-align: left; margin: 10px 0; font-size: 17px;">
+                    $\bar{\mathbf{v}}$ velocidad promediada en el tiempo;
+                    $P_k$ y $P_\omega$ términos de producción; 
+                    $F_1$ y $F_2$ funciones de mezcla;
+                    $\mu_t = \rho_f \frac{a_1 k}{\max(a_1 \omega, S F_2)}$ viscosidad turbulenta;
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Definición de variables -->
+              <div style="font-size: 14px; text-align: justify; margin-top: 15px; line-height: 1.4;">
+                donde 
+                $\boldsymbol{\tau}_t = \mu_t \left[\nabla \bar{\mathbf{v}} + (\nabla \bar{\mathbf{v}})^T \right] - \frac{2}{3}\rho_f k \mathbf{I}$ tensor de esfuerzos de Reynolds;
+                $k_t = c_{p,f}\mu_t / Pr_t$ conductividad térmica turbulenta ($Pr_t$ número de Prandtl turbulento);
+                $\sigma_k$, $\sigma_\omega$, $\beta^*$, $\beta$ y $\gamma$ son constantes; 
+                variables ($\rho$, $p$, $\boldsymbol{\tau}$, $\mathbf{g}$, $c_p$, $k$, $T$) para las fases fluida ($_f$) y sólida ($_s$).
+              </div>
+
+            </section>
+
+          
+          
+          
+          
+            <section>
+
+              <h4>Condiciones de Borde — Modelo Turbulento</h4>
+
+              <!-- Imagen -->
+              <div style="text-align: center; margin-top: 5px;">
+                <img src="imagenes/condiciones_de_borde.png" style="width: 90%; border-radius: 0px;">
+              </div>
+
+              <!-- Itemización inferior -->
+              <div style="
+                  display: flex;
+                  gap: 40px;
+                  margin-top: 10px;
+                  align-items: flex-start;
+                  font-size: 14.5px;
+                  text-align: left;
+                  line-height: 1.5;
+              ">
+
+                <div style="flex: 1;">
+                  <ul>
+                    <li><strong>Turbulencia en Entrada:</strong> Calculada mediante intensidad turbulenta $I = 5\%$); $C_\mu = 0.09$.</li>
+                  </ul>
+                </div>
+
+                <div style="flex: 1;">
+                  <ul>
+                    <li><strong>Tratamiento de Pared ($y^+$):</strong> Condición $\partial_n k = 0$ y perfil de ley de pared analítico para la disipación específica $\omega$.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <section>
+
+              <h4>Condiciones Iniciales y Numéricas</h4>
+
+              <!-- Imagen -->
+              <div style="text-align: center; margin-top: 5px;">
+                <img src="imagenes/condiciones_de_borde.png" style="width: 90%; border-radius: 0px;">
+              </div>
+
+              <!-- Itemización inferior -->
+              <div style="
+                  display: flex;
+                  gap: 40px;
+                  margin-top: 10px;
+                  align-items: flex-start;
+                  font-size: 14.5px;
+                  text-align: left;
+                  line-height: 1.5;
+              ">
+
+                <div style="flex: 1.1;">
+                  <ul>
+                    <li>
+                      <strong>Condiciones Iniciales ($t = 0$):</strong> Dominios en reposo con el fluido a temperatura ambiente y el radiador frío para el transitorio térmico:
+                      <div style="margin-top: 8px; text-align: center; font-size: 15px;">
+                        $\mathbf{v}_i = 0, \qquad T_{f,i} = 15^\circ\text{C}, \qquad T_{s,i} = 0^\circ\text{C}$
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div style="flex: 0.9;">
+                  <ul>
+                    <li><strong>Discretización Temporal:</strong> Simulación en régimen transitorio con un paso de tiempo fijo establecido en $\Delta t = 0.001 \, s$.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </section>
+          
+          
+        
+          <section>
+
+            <h4>Anexo: Propiedades Termofísicas - Simulación en Ansys Fluent</h4>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start; margin-top: 15px;">
+
+              <!-- Columna Izquierda: Dominio Fluido (Aire) -->
+              <div style="flex: 1.1; font-size: 14px; text-align: left; line-height: 1.4;">
+                <h5 style="color: #42affa; margin-bottom: 6px; font-size: 16px;">
+                  1. Dominio Fluido - Aire 
+                </h5>
+                <p style="margin-bottom: 8px;">
+                  Propiedades por defecto en Fluent (a 1 atm y 298.15 K) - densidad variable:
+                </p>
+
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 10px;">
+                  <thead>
+                    <tr style="border-bottom: 2px solid #fff;">
+                      <th style="padding: 4px; text-align: left;">Propiedad</th>
+                      <th style="padding: 4px; text-align: left;">Valor por Defecto</th>
+                      <th style="padding: 4px; text-align: left;">Unidad</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="padding: 4px;"><strong>Cp</strong> (Calor Específico)</td>
+                      <td style="padding: 4px;">1006.43</td>
+                      <td style="padding: 4px;">J/(kg·K)</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 4px;"><strong>Cond. Térmica</strong> (\(k\))</td>
+                      <td style="padding: 4px;">0.0242</td>
+                      <td style="padding: 4px;">W/(m·K)</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 4px;"><strong>Viscosidad</strong> (\(\mu\))</td>
+                      <td style="padding: 4px;">1.7894e-05</td>
+                      <td style="padding: 4px;">kg/(m·s)</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p style="margin-bottom: 5px;">
+                  <strong>Densidad variable \(\rho(T)\) [0°C - 15°C]:</strong>
+                </p>
+                <p style="margin-bottom: 5px; font-size: 13px;">
+                  Ajuste respecto a \(T\) en Kelvin (\(273.15 \le T \le 288.15\)):
+                </p>
+                <div style="margin: 8px 0; text-align: center; background: rgba(255,255,255,0.05); padding: 8px; border-radius: 4px;">
+                  \(\displaystyle \rho(T) = 1.293 - 0.0047 \cdot (T - 273.15)\)
+                </div>
+                <span style="font-size: 11px; color: #aaa; display: block; text-align: center;">
+                  (Equivale a \(\rho = 1.293 \text{ kg/m}^3\) a 0°C y \(\rho \approx 1.222 \text{ kg/m}^3\) a 15°C)
+                </span>
+              </div>
+
+              <!-- Columna Derecha: Dominios Sólidos (Aluminio y Cobre) -->
+              <div style="flex: 1; font-size: 14px; text-align: left; line-height: 1.4;">
+                <h5 style="color: #42affa; margin-bottom: 6px; font-size: 16px;">
+                  2. Dominios Sólidos
+                </h5>
+                <p style="margin-bottom: 8px;">
+                  El <strong>Aluminio</strong> se asigna a las aletas. El <strong>Cobre</strong> se asigna a las tuberías:
+                </p>
+
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                  <thead>
+                    <tr style="border-bottom: 2px solid #fff;">
+                      <th style="padding: 4px; text-align: left;">Propiedad (Unidades)</th>
+                      <th style="padding: 4px; text-align: left; color: #ffb03a;">Aluminio (al)</th>
+                      <th style="padding: 4px; text-align: left; color: #ff3a3a;">Cobre (cu)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                      <td style="padding: 6px 4px;"><strong>Densidad</strong><br><span style="font-size:11px; color:#aaa;">\(\rho\) [kg/m³]</span></td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">2719</td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">8978</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                      <td style="padding: 6px 4px;"><strong>Calor Específico</strong><br><span style="font-size:11px; color:#aaa;">\(C_p\) [J/(kg·K)]</span></td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">871</td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">381</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 6px 4px;"><strong>Cond. Térmica</strong><br><span style="font-size:11px; color:#aaa;">\(k\) [W/(m·K)]</span></td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">202.4</td>
+                      <td style="padding: 6px 4px; vertical-align: middle;">387.6</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+
+          </section>
+
+                    
+    
+            <section data-background-video="videos/malla_bloques_sghx2.mp4" 
+                     data-background-video-loop="true"
+                     data-background-video-muted="true"
+                     data-background-size="cover"
+                     style="position: relative;">
+
+                <div class="fragment fade-in"
+                     style="
+                        position: absolute;
+                        top: 5%;
+                        right: 4%;
+                        width: 28%;
+                        font-size: 22px;
+                        text-align: left;
+                        line-height: 1.6;
+                        background: rgba(0,0,0,0.72);
+                        color: white;
+                        padding: 18px;
+                        border-radius: 12px;
+                     ">
+
+                    <strong style="font-size: 28px;">
+                        Mallado
+                    </strong>
+
+                    <ul style="
+                        margin-top: 15px;
+                        padding-left: 28px;
+                    ">
+                        <li>Malla por bloques</li>
+                        <li>Elementos: 983592</li>
+                        <li>Calidad ortogonal</li>
+                    </ul>
+
+                </div>
+
+            </section>
+          
+          
+            <section>
+                    <h4>Malla por bloques</h4>
+                    
+                    <img src="imagenes/blockMesh1.png" style="width: 111%; border-radius: 0px;">
+            
+            </section>
+          
+          
+            <section>
+                    <h4>Malla por bloques</h4>
+                    
+                    <img src="imagenes/blockMesh3.png" style="width: 111%; border-radius: 0px;">
+            
+            </section>
+            
+
+    
+        </section>             
+                              
+              
+              
+        <section data-name="Resultados">  
+            
+          
+          <section data-background-video="videos/stream_compare_3mps.mp4" data-background-video-loop data-background-video-muted style="position: relative; height: 100%;"> 
+
+            <!-- CONTENEDOR FLOTANTE INVISIBLE (Solo controla la posición en la slide) -->
+            <div style="
+              position: absolute; 
+              top: 15px;       
+              left: 15px;      
+              width: 810px;     
+              z-index: 10;
+              box-sizing: border-box;
+            "> 
+
+              <!-- CUADRO DE FONDO ANIMADO: Aparece en el fragmento 1 y se queda fijo hasta el final -->
+              <div class="fragment" data-fragment-index="1" style="
+                background-color: rgba(0, 0, 0, 0.1); /* Fondo translúcido regulable */
+                padding: 20px; 
+                border-radius: 8px;
+                width: 100%;
+                box-sizing: border-box;
+              ">
+
+                <!-- PILA DE IMÁGENES (r-stack): Comparten el mismo centro exacto -->
+                <div class="r-stack">
+
+                  <!-- Primera imagen: Aparece junto con el fondo en el clic 1 y desaparece en el clic 2 -->
+                  <img class="fragment current-visible" data-fragment-index="1" src="imagenes/Matriz_Fuerzas_05mps.png" style="width: 100%; border-radius: 4px;">
+
+                  <!-- Segunda imagen: Reemplaza a la primera en el clic 2 y se queda fija -->
+                  <img class="fragment current-visible" data-fragment-index="2" src="imagenes/Matriz_Fuerzas_3mps.png" style="width: 100%; border-radius: 4px;">
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+          
+          
+          
+          <section data-background-video="videos/sgh_Tke_comparacion_3mps.mp4" data-background-video-loop data-background-video-muted style="position: relative; height: 100%;"> 
+
+            <!-- CONTENEDOR FLOTANTE INVISIBLE (Ancho reducido a 580px para controlar el estiramiento vertical) -->
+            <div style="
+              position: absolute; 
+              top: -510px;       
+              left: 0px;      
+              width: 900px;     /* AJUSTADO: Antes 900px, ahora más estrecho para evitar que caiga */
+              z-index: 10;
+              box-sizing: border-box;
+            "> 
+
+              <!-- CUADRO DE FONDO ANIMADO -->
+              <div class="fragment" data-fragment-index="1" style="
+                background-color: rgba(0, 0, 0, 0.1); 
+                padding: 20px; 
+                border-radius: 8px;
+                width: 100%;
+                box-sizing: border-box;
+              ">
+
+                <!-- PILA DE IMÁGENES (r-stack) -->
+                <div class="r-stack">
+
+                  <!-- Primera imagen -->
+                  <img class="fragment current-visible" data-fragment-index="1" src="imagenes/Resumen_Promedios_Fuerza.png" style="width: 100%; border-radius: 4px;">
+
+                  <!-- Segunda imagen (Removí 'current-visible' para que permanezca fija en el último clic) -->
+                  <img class="fragment" data-fragment-index="2" src="imagenes/Resumen_Coeficientes_Aerodinamicos.png" style="width: 100%; border-radius: 4px;">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          
+          
+          
+          <section data-background-video="videos/sgh_T_comparacion.mp4" data-background-video-loop data-background-video-muted style="position: relative; height: 100%;"> 
+
+            <!-- CONTENEDOR FLOTANTE INVISIBLE (Solo controla la posición en la slide) -->
+            <div style="
+              position: absolute; 
+              top: -1302px;       
+              left: 150px;      
+              width: 531px;     
+              z-index: 10;
+              box-sizing: border-box;
+            "> 
+
+              <!-- CUADRO DE FONDO ANIMADO: Aparece en el fragmento 1 y se queda fijo hasta el final -->
+              <div class="fragment" data-fragment-index="1" style="
+                background-color: rgba(0, 0, 0, 0.1); /* Fondo translúcido regulable */
+                padding: 20px; 
+                border-radius: 8px;
+                width: 100%;
+                box-sizing: border-box;
+              ">
+
+                <!-- PILA DE IMÁGENES (r-stack): Comparten el mismo centro exacto -->
+                <div class="r-stack">
+
+                  <!-- Primera imagen: Aparece junto con el fondo en el clic 1 y desaparece en el clic 2 -->
+                  <!-- Primera imagen: Aparece junto con el fondo en el clic 1 y desaparece en el clic 2 -->
+                  <img class="fragment current-visible" data-fragment-index="1" src="imagenes/Resumen_Promedios_Conveccion.png" style="width: 100%; border-radius: 4px;">
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>        
+          
+          
+          
+
+
+                
+          
+  
+    
+        </section>                 
+              
+
+              
+              
+        <section data-name = "Conclusiones" >
+          
+          
+            <section data-background-video="videos/compare_hlocal_mps.mp4" data-background-video-loop data-background-video-muted style="position: relative; height: 100%;"> 
+
+              <!-- CONTENEDOR MAESTRO: Centrado perfecto absoluto en toda la pantalla -->
+              <div style="
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                box-sizing: border-box;
+              ">
+
+                <!-- RECUADRO CON LA TABLA RESUMEN -->
+                <div style="
+                  background-color: rgba(0, 0, 0, 0.72);
+                  padding: 30px; 
+                  border-radius: 12px; 
+                  width: 90%; 
+                  max-width: 1100px;
+                  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                ">
+
+                  <table style="
+                    width: 100%; 
+                    border-collapse: collapse; 
+                    color: white; 
+                    font-size: 20px; 
+                    text-align: center;
+                  ">
+                    <thead>
+                      <tr style="border-bottom: 3px solid white; font-size: 22px; font-weight: bold;">
+                        <th style="padding: 12px; text-align: left;">Parámetro</th>
+                        <th style="padding: 12px;">Velocidad</th>
+                        <th style="padding: 12px;">Diseño Normal</th>
+                        <th style="padding: 12px;">Diseño D1</th>
+                        <th style="padding: 12px;">Variación (Δ%)</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <!-- FUERZA Z Y CD -->
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <td style="padding: 10px; text-align: left; font-weight: bold;"> $F_z$ / $C_d$</td>
+                        <td>3.0 m/s</td>
+                        <td>3.526e-02</td>
+                        <td>3.629e-02</td>
+                        <td style="color: #ff4d4d; font-weight: bold;">+2.92%</td>
+                      </tr>
+
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.4);">
+                        <td style="padding: 10px; text-align: left; font-weight: bold;"></td>
+                        <td>0.5 m/s</td>
+                        <td>1.423e-03</td>
+                        <td>1.428e-03</td>
+                        <td style="color: #ff4d4d; font-weight: bold;">+0.34%</td>
+                      </tr>
+
+
+                      <!-- FUERZA Y Y CL -->
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <td style="padding: 10px; text-align: left; font-weight: bold;"> $F_y$ / $C_l$</td>
+                        <td>3.0 m/s</td>
+                        <td>9.294e-03</td>
+                        <td>1.179e-02</td>
+                        <td style="color: #4dff4d; font-weight: bold;">+26.90%</td>
+                      </tr>
+
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.4);">
+                        <td style="padding: 10px; text-align: left; font-weight: bold;"></td>
+                        <td>0.5 m/s</td>
+                        <td>5.429e-04</td>
+                        <td>5.034e-04</td>
+                        <td style="color: #ff4d4d; font-weight: bold;">-7.27%</td>
+                      </tr>
+
+
+                      <!-- CONVECCIÓN H -->
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <td style="padding: 10px; text-align: left; font-weight: bold;">Convección ($h$)</td>
+                        <td>3.0 m/s</td>
+                        <td>22.76</td>
+                        <td>24.44</td>
+                        <td style="color: #4dff4d; font-weight: bold;">+7.38%</td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding: 10px; text-align: left; font-weight: bold;"></td>
+                        <td>0.5 m/s</td>
+                        <td>3.63</td>
+                        <td>4.35</td>
+                        <td style="color: #4dff4d; font-weight: bold;">+20.06%</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+
+            </section>
+          
+          
+
+            <section>
+
+              <!-- TÍTULO DE LA DIAPOSITIVA (Nativo de Reveal.js) -->
+              <h2 style="font-size: 36px; font-weight: bold; text-align: center; margin-bottom: 45px;">
+                Conclusiones
+              </h2>
+
+              <!-- LISTA DE CONCLUSIONES ULTRA-PRECIAS -->
+              <ul style="
+                font-size: 24px; 
+                line-height: 1.6; 
+                text-align: left; 
+                max-width: 850px; 
+                margin: 0 auto; 
+                padding-left: 20px;
+              ">
+                <li class="fragment" style="margin-bottom: 25px;">
+                  <strong>Mejora Térmica:</strong> El diseño D1 aumenta la convección ($h$) en ambos regímenes, destacando un incremento del <strong>+20.06%</strong> a baja velocidad (0.5 m/s).
+                </li>
+                <li class="fragment" style="margin-bottom: 25px;">
+                  <strong>Impacto en Sustentación:</strong> A alta velocidad (3.0 m/s), D1 maximiza la fuerza vertical aumentando el coeficiente $C_l$ un <strong>+26.90%</strong>.
+                </li>
+                <li class="fragment">
+                  <strong>Costo Aerodinámico Minimizando:</strong> La ganancia en sustentación y transferencia térmica se logra con una penalización por arrastre ($C_d$) despreciable de solo el <strong>+2.92%</strong>.
+                </li>
+              </ul>
+
+            </section>
+
+          
+          
+          
+
+<section data-background-video="videos/sgh0001-0600.mp4" 
+         data-background-video-loop="true"
+         data-background-video-muted="true"
+         data-background-size="cover"
+         style="position: relative; height: 100%;">
+
+  <h4 style="
+    position: absolute;
+    top: -15%;
+    left: 33%;
+    transform: translate(-0%, -0%);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  ">
+    GRACIAS...
+  </h4>
+
+</section>
+
+          
+
+          
+           <section>
+
+            <h4>Anexo: Detalles del Modelo \(k-\omega\) SST y Leyes de Pared</h4>
+
+            <div style="display: flex; gap: 30px; align-items: flex-start; margin-top: 15px;">
+
+              <!-- Columna Izquierda: Entrada e Intensidad -->
+              <div style="flex: 1; font-size: 15px; text-align: left; line-height: 1.5;">
+
+                <h5 style="color: #42affa; margin-bottom: 8px; font-size: 18px;">
+                  1. Condiciones en la Entrada (Inlet)
+                </h5>
+                <p style="margin-bottom: 10px;">
+                  Las variables de transporte de la turbulencia se calculan analíticamente a partir del flujo medio:
+                </p>
+
+                <ul>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Energía Cinética Turbulenta (\(k\)):</strong> Basada en la intensidad turbulenta (\(I\)):
+                    <div style="margin: 5px 0; text-align: center;">
+                      \(\displaystyle k = \frac{3}{2} (U \cdot I)^2\)
+                    </div>
+                    Donde \(I = \frac{u'}{U}\) es la relación entre las fluctuaciones de velocidad \(u'\) y la velocidad media \(U\) (típicamente \(5\%\) para flujos internos).
+                  </li>
+                  <li>
+                    <strong>Tasa de Disipación Específica (\(\omega\)):</strong> Depende de la escala de longitud de la turbulencia (\(L\)):
+                    <div style="margin: 5px 0; text-align: center;">
+                      \(\displaystyle \omega = \frac{k^{1/2}}{C_\mu^{1/4} L}\)
+                    </div>
+                    Donde \(C_\mu = 0.09\) y \(L = 0.07 \cdot D_h\) (siendo \(D_h\) el diámetro hidráulico de la entrada del canal).
+                  </li>
+                </ul>
+
+              </div>
+
+              <!-- Columna Derecha: Capa Límite y Leyes de Pared -->
+              <div style="flex: 1; font-size: 15px; text-align: left; line-height: 1.5;">
+
+                <h5 style="color: #42affa; margin-bottom: 8px; font-size: 18px;">
+                  2. Capa Límite y Leyes de Pared (Walls)
+                </h5>
+                <p style="margin-bottom: 10px;">
+                  Se definen en función de la distancia adimensional a la pared (\(y^+ = \frac{\rho_f u_\tau y}{\mu_f}\)):
+                </p>
+
+                <ul>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Tratamiento para \(k\) (Condición en Pared):</strong>
+                    Se impone un gradiente nulo en la superficie (\(\partial_n k = 0\)), asumiendo que la producción de energía turbulenta es nula exactamente sobre el límite sólido (`kqRWallFunction`).
+                  </li>
+                  <li>
+                    <strong>Tratamiento para \(\omega\) (Leyes de Pared):</strong>
+                    Se utiliza una condición híbrida (`omegaWallFunction`) que interpola analíticamente según la posición del primer nodo:
+                    <div style="margin: 8px 0;">
+                      \(\displaystyle \omega = \begin{cases}              \dfrac{6\mu_f}{\rho_f \beta_1 y^2} & \text{si } y^+ \leq 5 \ \ \text{(Subcapa Viscosa)} \\              \dfrac{u_\tau}{\kappa y \sqrt{C_\mu}} & \text{si } y^+ > 30 \ \ \text{(Región Logarítmica)}              \end{cases}\)
+                    </div>
+                    Donde \(u_\tau\) es la velocidad de fricción, \(\kappa \approx 0.41\) es la constante de Von Kármán y \(\beta_1 = 0.075\).
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </section>
+      
+
+        </section>
+
+                                    
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                margin: 0.0001,
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                minScale: 1.,
+                maxScale: 1.2,
+                slideNumber: true,
+                previewLinks: 'auto',
+                simplemenu: {
+                    menuclass: "menu",
+                    activeclass: "active",
+                    activeelement: "li",
+                    selectby: "id",
+                    barhtml: {
+                        header: "",
+                        footer: ""
+                    },
+                    flat: true,
+                    scale: 0.67,
+                    csspath: ""
+               },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, Simplemenu]
+			});
+		</script>
+        
+        
+	</body>
+</html>
+
